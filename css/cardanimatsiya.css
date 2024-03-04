@@ -1,0 +1,66 @@
+body {
+  background-color: brown;
+}
+.animatsiya {
+  margin: 0 auto;
+  padding: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.top__boxs {
+  display: flex;
+  padding: 0px 0px 40px;
+}
+
+.top__box {
+  width: 100px;
+  height: 100px;
+  border-radius: 50px 50px 50px 0px;
+  background-color: brown;
+  border: 30px solid white;
+  animation: topbox 2s linear 0s alternate-reverse forwards;
+}
+
+.top__box:nth-child(1) {
+  border-radius: 50px 50px 0px 50px;
+}
+
+.bottom__boxs {
+  width: 350px;
+  height: 100px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+}
+
+.bottom__box {
+  width: 155px;
+  height: 155px;
+  background-color: white;
+  animation: box 2s linear 0s alternate-reverse forwards;
+}
+
+
+@keyframes box {
+  to {
+    transform: rotate(360deg)
+  }
+}
+
+@keyframes topbox {
+  0% {
+    transform: translateY(-10px)
+  }
+
+  50% {
+    transform: translateY(20px);
+  }
+
+  100% {
+    transform: scale(0.8);
+  }
+
+}

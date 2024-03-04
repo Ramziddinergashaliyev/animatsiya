@@ -1,0 +1,73 @@
+.landscepe__cards {
+  padding: 50px 0px 0px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.landscepe {
+  width: 500px;
+  height: 550px;
+  background-color: rgba(190, 190, 62, 0.836);
+  border-radius: 250px 250px 40px 40px;
+  position: relative;
+  animation: animland 8s alternate 0s infinite forwards;
+}
+
+.left__landscepe {
+  width: 300px;
+  height: 250px;
+  border-radius: 10px 250px 0px 0px;
+  bottom: 0;
+  background-color: rgb(255, 145, 0);
+  position: absolute;
+  z-index: 898;
+}
+
+.right__landscepe {
+  width: 300px;
+  height: 250px;
+  border-radius: 250px 0px 0px 0px;
+  bottom: 0;
+  right: 0;
+  background-color: rgb(148, 111, 0);
+  position: absolute;
+  z-index: 898;
+}
+
+.quyosh {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  background-color: rgb(240, 240, 164);
+  position: absolute;
+  top: 270px;
+  right: 170px;
+  animation: sun 15s ease-in-out alternate 0s infinite;
+}
+
+@keyframes sun {
+  0% {
+    transform: translateY(100px);
+  }
+  50% {
+    transform: translateY(-250px);
+    background-color: yellow;
+    box-shadow: 1px 1px 10px yellow;
+  }
+  100% {
+    transform: translateY(50px);
+  }
+}
+
+
+@keyframes animland {
+ from {
+  background-color: rgb(134, 224, 112);
+ }
+ 
+  to {
+    background-color: rgba(190, 190, 62, 0.836);
+  }
+}

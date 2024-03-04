@@ -1,0 +1,88 @@
+.stair__card {
+  padding-top: 70px;
+}
+
+.stair__box {
+  width: 400px;
+  height: 500px;
+  background-color: aqua;
+  margin: 0 auto;
+  border-radius: 200px 200px 10px 10px;
+  display: flex;
+  align-items: flex-end;
+  flex-direction: column-reverse;
+  gap: 15px;
+  overflow: hidden;
+  animation: boxes 1s alternate 0s infinite forwards;
+}
+
+.stair {
+  width: 200px;
+  height: 70px;
+  background-color: brown;
+  animation: stairanim .5s alternate 0s forwards;
+}
+
+.stair:nth-child(1) {
+  width: 90%;
+}
+
+.stair:nth-child(2) {
+  width: 70%;
+}
+
+.stair:nth-child(3) {
+  width: 50%;
+}
+
+.stair:nth-child(4) {
+  width: 30%;
+}
+
+@keyframes boxes {
+  0% {
+    background-color:aqua;
+  }
+  50% {
+    background-color: blueviolet;
+  }
+
+  100% {
+    background-color: yellow;
+  }
+}
+
+@keyframes stairanim {
+  0% {
+    transform: translateX(20px);
+    background-color: brown;
+  }
+  50% {
+    transform: translateY(-100px);
+    background-color: green;
+  }
+  70% {
+    transform: translateY(30px);
+    background-color: green;
+  }
+}
+
+.stair:nth-child(1) {
+  width: 90%;
+  animation-delay: .5s;
+}
+
+.stair:nth-child(2) {
+  width: 70%;
+  animation-delay: 1s;
+}
+
+.stair:nth-child(3) {
+  width: 50%;
+  animation-delay: 1.5s;
+}
+
+.stair:nth-child(4) {
+  width: 30%;
+  animation-delay: 2s;
+}
